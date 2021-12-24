@@ -1,0 +1,294 @@
+/*
+    ===============================
+            Public Styles
+    ===============================
+*/
+* , *:after , *:before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana,sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+/*
+    ===============================
+            Navbar Styles
+    ===============================
+*/
+
+ .navigation{
+    color: black;
+     overflow: hidden;
+     background-color: #fff;
+     letter-spacing: 4px;
+     display: block;
+     font-size: 15px;
+     position: fixed;
+     width: 100%;
+     padding:16px;
+     z-index: 10;
+
+ }
+  .navigation a{
+    text-decoration: none;
+    color: black;
+    background-color: inherit;
+    cursor: pointer;
+    
+ }
+ .content-nav{
+float: right;
+margin-right: 40px;
+ }
+
+
+
+/*
+    ===============================
+            Home Styles
+    ===============================
+*/
+.home-page {
+    
+    background-image: url("../images/Home/Architects.jpg");
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    -o-background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+header .home-info{
+    height: 50px;
+    width: 500px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    margin-top: 16px!important;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
+    -webkit-transform:translate(-50%, -50%) ;
+    -moz-transform:translate(-50%, -50%) ;
+    -ms-transform:translate(-50%, -50%) ;
+    -o-transform:translate(-50%, -50%) ;
+    letter-spacing: 4px;
+}
+.home-info b{
+background-color: black;
+padding: 10px;
+    opacity: 0.75;
+    font-size: 36px!important;
+}
+@media (max-width:767px) {
+    .home-page{
+        width:100%;
+        margin: 0px 10px;
+        
+    }
+}
+/*
+    ===============================
+        project-section
+    ===============================
+*/
+   
+    .page-title{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: #333;
+    margin-left: 30px;
+}
+.first-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+ }
+ .second-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+ }
+ .pic{
+
+     padding: 16px;
+ }
+ .pic img{
+     width:100%;
+ }
+
+ .projects-name{
+    background-color: black;
+    color:white;
+    text-align: center;
+    border:none;
+    height: 40px;
+    width: 170px;
+    position: absolute;
+    padding: 8px 16px;
+
+ }
+  /* Media for projects */
+
+   
+  @media (max-width: 767px) {
+    .project-section img{
+        width:100%;
+    }
+  } 
+ 
+  @media (max-width:956px ){
+    .first-row ,.second-row{
+        width:100%;
+        display: block;
+    }
+  }
+    
+
+
+
+/*
+    ===============================
+        About
+    ===============================
+*/
+.about{
+ margin: 40px;
+}
+.about-section{
+  
+    display: flex;
+    filter: grayscale(75%);
+    width: 100%;
+    padding: 0 8px;
+}
+.about-section img{
+    width: 95%;
+}
+.about-section button{
+    background-color:lightgray;
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    border:none;
+    
+}
+/* media query for about */
+
+@media (max-width:767px) {
+    .about-section{
+        display: block;
+      
+    }
+    .John-Doe ,.Jane-Doe ,.Mike-Ross ,.Dan-Star{
+        margin: 10px;
+    }
+}
+
+
+
+/*
+    ===============================
+            Contact Section
+    ===============================
+*/
+   .contact{
+      
+       margin-top:50px;
+       margin-left: 20px;
+   }
+ 
+  .contact-p{
+      margin-left: 20px;
+      margin-top: 40px;
+  }
+  input{
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    text-align: start;
+    appearance: auto;
+    cursor: text;
+    width: 99%;
+    height: 40px;
+    margin: 10px;
+  } 
+ 
+  .submit{
+  background-color: black;
+  color:white;
+  height: 50px;
+  width: 170px;
+  text-align: center;
+  border:none;
+  margin-top: 20px;
+  margin-left: 10px;
+  }
+
+  /* media query for content section */
+  @media (max-width:768px) {
+      input{
+          width:50%;
+          display: block;
+      }
+    .contact {
+        width: 100%;
+    }
+    .contact .h3{
+        width: 50%;
+    }
+}
+@media (min-width:1200px) {
+    input{
+        width:50%;
+        display: block;
+    }
+    
+}
+
+/*
+    ===============================
+        Image of location/map
+    ===============================
+*/
+.town{
+    width: 100%;
+    margin-top: 100px;
+}
+/*
+    ===============================
+        footer
+    ===============================
+*/
+footer{
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+}
+footer a:hover{
+    color: green;
+}
+/* Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { ... } */
+
+
+
+

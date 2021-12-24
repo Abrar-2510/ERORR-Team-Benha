@@ -1,0 +1,265 @@
+    
+    
+    
+    body {
+        font-family: lucida ;
+        color: #666;
+        margin: 0px;
+        padding: 0px;
+      
+    }
+    
+    .nav-items {
+        display: flex;
+        position: fixed;
+        list-style: none;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .navebar a{
+        text-decoration: none;
+        
+    }
+    
+    
+    .navebar .search{
+        float:right;
+        list-style: none;
+    }
+   
+    header {
+        background-image: url("../images/home.jpeg");
+        position: relative;
+        height: 73vh;
+        width: 100%;
+        text-align: center;
+        color: white;
+        
+        -o-background-size: cover;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        
+    }
+    header .header-content {
+        position: relative;
+        height: 50px;
+        width: 500px;
+        text-align: center;
+        color: white;
+        font-size: xx-large;
+        background-color: #333;
+        justify-content: space-around;
+        margin-top: 15%;
+        border:none;
+        
+        
+    }
+    section{
+        color:#555;
+        text-align: center;
+        
+    }
+    section .p1{
+        width: 45%;
+        font-weight: 500;
+        line-height: 1.1;
+        text-align: start;
+        font-size: 21px;
+        color: #777;
+        font-weight: 300;
+    }
+
+
+ container{
+    text-align: center;
+    display: flex;
+    padding: 100px 0;
+    margin-bottom: 20px;
+}
+
+container .content{
+    width: 50%;
+    height: 300px;
+    
+   
+}
+container .paragraph{
+    width: 45%;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: start;
+    margin-left: 15px;
+    margin-top: 100px;
+    font-size: 21px;
+    color: #777;
+    font-weight: 300;
+}
+.skills{
+    margin-top: 50px;
+}
+
+.skills .good{
+    text-align: center;
+}
+.skills .photo{
+    justify-content: space-around;
+    margin-left: 30%;
+}
+
+.btn-percentage{
+    
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.portfolio-items{
+    background-color: #444;
+    text-align: center;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+   
+}
+.portfolio{
+    background-image: url("../images/portfolio.jpeg");
+    height: 100vh;
+     
+       background-size: cover ;
+       position: relative;
+    margin-top:-30px ;
+}
+.portfolio .h-portfolio{
+ text-align: center;
+  color: white;
+  position: absolute;
+     top: 50%;
+     left: 50%;
+     transform:translate(-50%, -50%) ;
+     -webkit-transform:translate(-50%, -50%) ;
+     -moz-transform:translate(-50%, -50%) ;
+     -ms-transform:translate(-50%, -50%) ;
+     -o-transform:translate(-50%, -50%) ;
+     
+}
+.section3{
+    text-align: center;
+}
+section .work-gallery{
+    margin-top: 70px;
+}
+.btn-learn{
+    margin-top:70px;
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    margin-left: 47%;
+    border:none;
+    margin-bottom: 100px;
+}
+.section4{
+    background-image: url("../images/camera.jpeg");
+    height: 100vh;
+    margin-top: 20%;
+     
+       background-size: cover ;
+       position: relative;
+    margin-top:-30px ;
+}
+.section4 .CONTACT{
+    text-align: center;
+  color: white;
+  position: absolute;
+     top: 50%;
+     left: 50%;
+     transform:translate(-50%, -50%) ;
+     -webkit-transform:translate(-50%, -50%) ;
+     -moz-transform:translate(-50%, -50%) ;
+     -ms-transform:translate(-50%, -50%) ;
+     -o-transform:translate(-50%, -50%) ;
+}
+
+   .regester .feedback{
+       text-align:center;
+       color:#444;
+       margin-top: 50px;
+   }
+
+   .regester .regester-items{
+    text-align: center;
+    display: flex;
+    
+   }
+  .regester-items .town{
+    height: 200px;
+    width: 300px;
+    margin-left: 20%;
+    margin-top: 20px;
+  }
+  .regester .list-items{
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: start;
+    margin-left: 15px;
+    margin-top: 100px;
+    font-size: 21px;
+    color: #777;
+    font-weight: 300;
+  }
+ .regester .name{
+ 
+    width: 40%;
+    height:40px;
+ }
+ .regester .Email{
+    
+    width: 40%;
+    height: 40px;
+ }
+ .regester .Message{
+    
+    width: 82%;
+    height: 40px;
+    margin-top: 10px;
+ }
+
+  .regester .lables{
+   margin-top: 50px;
+  }
+ .regester .submit{
+    background-color: black;
+    color:white;
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    border:none;
+    margin-top: 20px;
+    margin-left: 59%;
+   
+ }
+footer{
+    background-color: #444;
+    margin-top: 20%;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+footer .btn-top{
+    margin-top:70px;
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    border:none;
+    margin-bottom: 100px;
+}
+
+footer:hover{
+    background-color: black;
+}
+

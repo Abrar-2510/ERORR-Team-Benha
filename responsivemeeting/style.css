@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+/**************************************/
+#responsive_min{
+    width:100%;
+    height:200px;
+    text-align: center;
+    border:1px solid blueviolet;
+    background-color: rgb(126, 124, 125);
+
+}
+@media(max-width:575.98px)
+{
+    #responsive_min{
+        background-color: rgb(189, 18, 83);
+    }
+}
+@media(min-width:576px)
+{
+    #responsive_min{
+        background-color: rgb(138, 165, 42);
+    }
+}
+@media(min-width:768px)
+{
+    #responsive_min{
+        background-color: rgb(52, 165, 42);
+    }
+}
+
+
+@media(min-width:992px)
+{
+    #responsive_min{
+        background-color: rgb(42, 140, 165);
+    }
+}
+@media(min-width:1200px)
+{
+    #responsive_min{
+        background-color: rgb(61, 21, 168);
+    }
+}
+@media(min-width:1400px)
+{
+    #responsive_min{
+        background-color: brown;
+    }
+}
+
+/*********************************/
+#responsive_max{
+    width:100%;
+    height:200px;
+    text-align: center;
+    border:1px solid rgb(67, 25, 107);
+    margin:20px 0 0;
+    background-color: rgb(126, 124, 125);
+
+}
+@media(max-width:1399.98px)
+{
+    #responsive_max{
+        background-color: brown;
+    }
+}
+@media(max-width:1199.98px)
+{
+    #responsive_max{
+        background-color: rgb(61, 21, 168);
+    }
+}
+@media(max-width:991.98px)
+{
+    #responsive_max{
+        background-color: rgb(42, 140, 165);
+    }
+}
+
+
+@media(max-width:767.98px)
+{
+    #responsive_max{
+        background-color: rgb(52, 165, 42);
+    }
+}
+
+@media(max-width:575.98px)
+{
+    #responsive_max{
+        background-color: rgb(138, 165, 42);
+    }
+}
+
+/*@media(max-width:575.98px)
+{
+    #responsive_max{
+        background-color: rgb(189, 18, 83);
+    }
+}
+*/
