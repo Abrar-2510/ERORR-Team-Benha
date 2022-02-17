@@ -1,0 +1,410 @@
+*{
+
+margin: 0%;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+   background: linear-gradient(#009688 0%,#009688 130px,#d9d9d9 130px,#d9d9d9 100px);
+}
+
+.container{
+    position: relative;
+    width:1396px;
+    max-width: 100%;
+    height: calc(100vh - 40px);
+    background-color: #fff;
+    display: flex;
+}
+.container .leftside{
+    position: relative;
+    flex: 30%;
+ background-color: #fff;
+ border-right: 1px solid #000 rgb(0, 0, 0, 0.2);
+ overflow-y: auto;
+}
+
+/*  */
+.container .rightside{
+    position: relative;
+    flex: 70%;
+background-color: #e5dde5;
+}
+.rightside .bac-right{
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+   height: 100%;
+   width: 100%;
+    opacity: 0.06;
+}
+
+ .header{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background: #d9d9d9;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+
+}
+.userimg{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+ border-radius: 50%;
+}
+.cover{
+ position:absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+/* header */
+
+@media (max-width:767px) {
+    .leftside .header{
+        width: 100%;
+      display:block;
+    }
+
+}
+
+.nav-icon{
+    display: flex;
+}
+.nav-icon li{
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    color: #51585c;
+    font-size: 1.5em;
+    margin-left: 22px;
+}
+.search-bar{
+position: relative;
+width: 100%;
+height: 50px;
+background: #f6f6f6;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 15px;
+}
+.search-bar div{
+    width: 100%
+}
+.search-bar div input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 6px;
+    height: 38px;
+    background: #fff;
+    border-radius: 14px;
+    padding-left: 40px;
+}
+.search-bar div ion-icon{
+    top:14px;
+    left:34px;
+    position: absolute;
+    font-size: 1.2em;
+}
+.search-bar div input::placeholder{
+    color: #51585c;
+}
+.chat-list{
+    position: relative;
+    height: calc(100%-110px);
+    overflow-y: auto;
+}
+.chat-list .block{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0,0,0.06);
+    cursor: pointer;
+}
+.chat-list .block .imgbx{
+    position: relative;
+    min-width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+    }
+    .chat-list .block .details{
+        position: relative;
+        width: 100%;
+    }
+    .chat-list .block .listHead{
+        display: flex;
+        justify-content:space-between;
+    }
+    .chat-list .block .listHead h4{
+        margin-left: 20px;
+    }
+    .chat-list .block.unread .listHead .time{
+        color: green;
+    }
+    .chat-list .block .listHead .time{
+        font-size: 0.75em;
+        color: #aaa;
+    }
+  /* chatlist */
+    /* Media for projects */
+
+   
+    @media (max-width: 767px) {
+        .chat-list{
+            width:100%;
+            display: block;
+        }
+      } 
+     
+      @media (max-width:956px ){
+        .first-row ,.second-row{
+            width:100%;
+            display: block;
+        }
+      }
+        
+    
+    .message-p p{
+        margin-top: 2px;
+    margin-left: 30px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display:-webkit-box;
+    font-size: 0.9em;
+    }
+    .message-p b{
+        margin-left: 92%;
+        background-color: green;
+        color: #fff;
+        max-width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* message */
+
+
+@media (max-width:767px) {
+    .about-section{
+        display: block;
+      
+    }
+    .John-Doe ,.Jane-Doe ,.Mike-Ross ,.Dan-Star{
+        margin: 10px;
+    }
+}
+
+
+    .rightside .header .imgText{
+        display: flex;
+        position: relative;
+        width: 100%;
+       
+    }
+    .rightside .imgText h4{
+font-weight: 400;
+color: #000;
+line-height: 1.2em;
+margin-left: 15px;
+    }
+
+ .rightside .imgText h4 span{
+        line-height: 0.8em;
+        color: #555;
+    }
+/* chatbox */
+  /* media query for content section */
+  @media (max-width:768px) {
+    input{
+        width:50%;
+        display: block;
+    }
+  .contact {
+      width: 100%;
+  }
+  .contact .h3{
+      width: 50%;
+  }
+}
+@media (min-width:1200px) {
+  input{
+      width:50%;
+      display: block;
+  }
+  
+}
+
+    .chatBox{
+       
+        position: relative;
+        width: 100%;
+        height: calc(100% - 120px);  /* 60+60 */
+        padding: 50px;
+        overflow-y: auto;
+    } 
+    .message{
+        position: relative;
+        display: flex;
+        width:100%;
+        margin: 15px 0px;
+   
+    }
+    .message p{
+        position: relative;
+        right: 0;
+        text-align: right;
+        max-width:65%;
+        padding: 12px;
+        border-radius: 10px;
+        font-size: 0.9em;
+      
+     
+    }
+ #my-message p::before{
+content: "";
+position: absolute;
+top: 0;
+right: -12px;
+width: 20px;
+height: 20px;
+background: linear-gradient(135deg, #dcf8c6 0%,#dcf8c6 50%, transparent 50%, transparent);
+}
+.message p span{
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+    opacity: 0.5;
+}
+  #my-message{
+    background: #dcf8c6;
+    justify-content: flex-end;
+}
+#front-message{
+    background: #fff;
+    justify-content: flex-start;
+}
+#front-message p::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(225deg, #fff 0%,#fff 50%, transparent 50%, transparent);
+    }
+
+    .chat-input{
+position: relative;
+width: 100%;
+height: 60px;
+background: #f0f0f0;
+padding: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+    }
+    .chat-input ion-icon{
+        cursor: pointer;
+        font-size: 1.8em;
+        color: #51585c;
+        
+    }
+    .chat-input .ion-icon :nth-child(1){
+        margin-right: 15px;
+    }
+    .chat-input input{
+        position: relative;
+        width: 90%;
+        padding: 10px 20px;
+        margin: 0 20px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        font-size: 1em;
+    }
+
+    
+.dark-mode {
+    background:#090e11;
+    color: #fff;
+  }
+  .dark-mode .chat-list{
+    background:#090e11;
+  }
+  .dark-mode .header{
+    background:#00963e;
+  }
+  .dark-mode .search-bar {
+    background:#090e11;
+  }
+  .dark-mode .search-bar ion-icon{
+    color: #51585c;
+  }
+  .dark-mode .rightside .chatBox{
+    background:#090e11;
+  }
+  .dark-mode .rightside input{
+    background:#090e11;
+  }
+  .dark-mode  .rightside .imgText h4{
+      color: #fff;
+  }
+  .dark-mode  .rightside .imgText h4 span{
+    color: rgba(255, 255, 255, 0.842);
+  }
+  
+  .dark-mode .rightside .chat-input ion-icon{
+ color:#00963e;
+ height: 60px;
+  }
+  .dark-mode .rightside  #my-message{
+      color: #090e11;
+      background: #fff;
+  }
+  .dark-mode .rightside  #front-message{
+    color: #fff;
+    background:#00963e;
+}
+.dark-mode .rightside #front-message p::before{
+    background: linear-gradient(225deg, #00963e 0%,#00963e 50%, transparent 50%, transparent);
+    }
+    .dark-mode .rightside #my-message p::before{
+        background: linear-gradient(135deg, #fff 0%,#fff 50%, transparent 50%, transparent);
+        }
+
+        /* Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { ... } */

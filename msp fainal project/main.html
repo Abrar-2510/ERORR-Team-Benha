@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> msp task 4</title>
+    </head>
+    <style>
+        body{
+            background-color: #222;
+        }
+  .page-title{
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 50px;
+      margin-left: 40%;
+      color: white;
+  }
+  .paragraph{
+      margin-left: 45%;
+    
+      color: white;
+  }
+  .boxes{
+      display: flex;
+      margin-left: 15%;
+      text-align: center;
+  }
+                .box1 ,.box2 , .box3{
+                    background-color: white;
+                }
+    
+                .box2 ,.box3{
+                    margin-left: 10px;
+                }
+
+  .end{
+      margin-left: 50%;
+      margin-top: 70px;
+    background-color: white;
+
+    
+  }
+  button{
+      height: 40px;
+      width: 120px;
+      border: white;
+  }
+  @keyframes stretch {
+
+  }
+.box1:hover {
+    animation-name: bounce;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
+}
+  
+  
+    </style>
+    <body>
+        <h1 class="page-title"> Blog  Bosts</h1>
+        <p class="paragraph"> images from <u>freepik </u></p>
+        <div class="boxes">
+        <div class="box1">
+            <img src="Capture.PNG">
+            <h1 > post 1 headlines</h1>
+            <p> sample small text. lorem ipsum color sit amet</p>
+            <button> READ MORE</button>
+        </div>
+
+        <div class="box2">
+            <img src="Capture1.PNG">
+            <h1 > post 2 headlines</h1>
+            <p> sample small text. lorem ipsum color sit amet</p>
+            <button> READ MORE</button>
+        </div>
+
+        <div class="box3">
+            <img src="Capture2.PNG">
+            <h1 > post 3 headlines</h1>
+            <p> sample small text. lorem ipsum color sit amet</p>
+            <button> READ MORE</button>
+        </div>
+    </div>
+        <button class="end"> LEARN more</button>
+    </body>
+</html>

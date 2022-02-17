@@ -1,0 +1,95 @@
+body {
+    font-family: lucida sans ;
+}
+
+.nav ul{
+    padding: 15px 0;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+    
+  
+}
+a{
+    text-decoration:none ;
+    color: black;
+   
+}
+ul a{
+    font-size: 20px;
+}
+a:hover{
+  text-decoration: underline #eb5424 4px solid;
+}
+span {
+    width: 50%;
+    float: left;
+    list-style: none;
+  margin-left: 80px;
+ font-size: 50px;
+}
+.home {
+    height: 500px;
+    background: url("../images/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.home .home-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.home p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #888;
+    margin-bottom: 20px
+}
+.home h1{
+    color: #eb5424;
+}
+button{
+    background: #eb5424;
+    color: #fff;
+    font-size: 18px;
+    width: 150px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold
+}
+button:hover{
+    background: #fff;
+    color: #eb5424
+}
+.content{
+    text-align: center;
+    margin-top: 50px;;
+}
+.content h1{
+    color: #eb5424;
+}
+.content p{
+    color: #888;
+}
+.boxes{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.boxes h1{
+    color: #eb5424;
+}
+.boxes{
+    color: #888;
+}

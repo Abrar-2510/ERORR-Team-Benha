@@ -1,0 +1,57 @@
+/*
+@keyframes chage-color{
+    0%{
+        background-image: url(../img/1.jpeg);
+        background-size: 100% 100%;
+    }
+    30%{
+        background-image: url(../img/4.jpeg); 
+        background-size: 100% 100%;
+    }
+    50%{
+        background-image: url(../img/2.jpeg); 
+        background-size: 100% 100%;
+
+       }
+    100%{
+        background-image: url(../img/3.jpeg);
+        background-size: 100% 100%;
+
+        }
+}
+*/
+body{
+    overflow-x:hidden ;
+}
+img{
+    position: relative;
+    left: -600px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+    animation-delay: 3s;
+}
+@keyframes move{
+    0%{
+     top: 0;
+     left:-600px;
+    }
+    50%{
+        top: 0;
+        left:120%;
+        transform: rotateY(0deg);
+
+    }
+       51%{
+        top: 0;
+        left:120%;
+        transform: rotateY(180deg);
+    }
+    100%{
+        top:0;
+        left: -600px;
+        transform: rotateY(180deg);
+
+    }
+}
